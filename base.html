@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-contexto="pagina_principal" modo="claro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hub do Andre</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body class="escuro">
+    <h1 class="titulo">Hub do Andre</h1></body>
+
+    <div class="circulo">
+        <button class="botao botao_escuro"></button>
+        <button class="botao botao_claro"></button>
+    </div>
+
+    <p class="explicativo_claro_escuro">Clique acima para mudar entre Modo escuro ( padrão ) e claro.</p>
+
+    <nav class="cabecalho">
+        <button class="botao botao_cabecalho botao_pagina_principal ativo">Página principal</button>
+        <button class="botao botao_cabecalho botao_sobre_mim">Sobre mim</button>
+        <button class="botao botao_cabecalho botao_trabalhos">Trabalhos</button>
+        <input type="checkbox" id="redes" class="clique">
+        <label for="redes">
+            <p class="botao botao_redes_sociais">Redes sociais</p>
+        </label>
+        <ul class="lista_menu">
+            <label for="redes"><span class="botao botao_fechar_lista">x</span></label>
+
+            <li class="lista_menu_item lista_github">
+                <a href="https://github.com/Andre-Santoro" target="_blank" rel="noopener noreferrer" 
+                class="lista_menu_link">Github</a>
+            </li>
+
+            <li class="lista_menu_item lista_linkedin">
+                <a href="https://www.linkedin.com/in/andre-santoro-7999b02b6/" target="_blank" rel="noopener noreferrer" 
+                class="lista_menu_link">Linkedin</a>
+            </li>
+
+            <li class="lista_menu_item lista_instagram">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" 
+                class="lista_menu_link">Instagram</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <h2 class="titulo_categoria">Página principal</h2>
+
+    <section class="texto">
+        <!-- &emsp; Da em torno de 4 espaços / Para iniciar paragrafo-->
+        <p class="texto_primario">&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid et pariatur non inventore, placeat expedita accusantium sapiente 
+            ullam deserunt sed, soluta beatae praesentium fugit delectus quis quasi quisquam magni enim!<br><br>&emsp;Lorem ipsum, dolor sit amet consectetur adipisicing 
+            elit. Excepturi natus officia ullam vero, reiciendis, fuga dicta quos nobis eos maxime officiis voluptates quasi ea hic, dolore odio itaque eum debitis.
+        </p>
+
+        <ul class="texto_secundario">
+            <li class="lista_texto_secundario">DESENVOLVEDOR</li>
+            <li class="lista_texto_secundario">FULL-STACK</li>
+        </ul>
+    </section> 
+    <script src="js/principal.js"></script>
+</body>
+</html>
