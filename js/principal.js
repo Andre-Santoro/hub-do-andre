@@ -66,7 +66,7 @@ function alterarData(data) {
             `;
             textoDireito.innerHTML = 
             `
-                DESENVOLVEDOR FULL-STACK<br><br>AUTOMATIZADOR<br><br>ANALISTA DE DADOS
+                DESENVOLVEDOR DE SOFTWARE<br><br>AUTOMATIZADOR<br><br>DATA
             `;
             textoSobreMim.innerHTML = ``;
             textoProjetos.innerHTML = ``;
@@ -80,11 +80,16 @@ function alterarData(data) {
             textoDireito.innerHTML = ``;
             textoSobreMim.innerHTML = 
             `
-                Sou um desenvolvedor full-stack com foco em criar automações e fazer aprendizado de máquina.
+                Sou um desenvolvedor de software com foco em criar automações e fazer aprendizado de máquina.
                 <br><br>
                 Tenho experiência com linguagens como Python e JavaScript, além de trabalhar com bibls e bancos de dados relacionais e não-relacionais. Utilizo Git e GitHub no meu fluxo de trabalho e estou sempre explorando novas ferramentas e boas práticas para programar.
                 <br><br>
+                
                 Tenho como meta profissional subir na carreira e fazendo aplicações que contribuam para as pessoas com suas funcionalidades e para o sucesso das equipes em que atuo.
+                <br><br>
+                <p style="font-size: 25px; color: palevioletred;">Segue abaixo meu currículo para download:</p>
+                <br><br>
+                <a href="../assets/curriculo.pdf" download class="botao-download">Baixar Currículo</a>
             `;
             textoProjetos.innerHTML = ``;
             barraAprendizado.style.display = "none"; // Esconder a barra
