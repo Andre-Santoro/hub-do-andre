@@ -12,55 +12,55 @@ export function carregarProjetos() {
 
     <div class="grid_habilidades">
     <div class="card_habilidade">
-      <i class="devicon-java-plain"></i>
+      <i class="devicon-java-plain colored"></i>
       <p>Java</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-spring-plain"></i>
+      <i class="devicon-spring-plain colored"></i>
       <p>Spring</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-python-plain"></i>
-      <p>Python</p>
+      <i class="devicon-javascript-plain colored"></i>
+      <p>Javascript</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-django-plain"></i>
-      <p>Django</p>
+      <i class="devicon-react-plain colored"></i>
+      <p>React</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-csharp-plain"></i>
+      <i class="devicon-csharp-plain colored"></i>
       <p>C#</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-dotnetcore-plain"></i>
+      <i class="devicon-dotnetcore-plain colored"></i>
       <p>.NET Core</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-postgresql-plain"></i>
+      <i class="devicon-postgresql-plain colored"></i>
       <p>SQL - PostgreSQL</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-mongodb-plain"></i>
+      <i class="devicon-mongodb-plain colored"></i>
       <p>NoSQL - MongoDB</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-docker-plain"></i>
+      <i class="devicon-docker-plain colored"></i>
       <p>Docker</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-git-plain"></i>
+      <i class="devicon-git-plain colored"></i>
 
-      <i class="devicon-github-original"></i>
+      <i class="devicon-github-original colored"></i>
       <p>Git & Github</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-html5-plain"></i>
-      <i class="devicon-css3-plain"></i>
+      <i class="devicon-html5-plain colored"></i>
+      <i class="devicon-css3-plain colored"></i>
       <p>HTML & CSS</p>
     </div>
     <div class="card_habilidade">
-      <i class="devicon-javascript-plain"></i>
-      <p>Javascript</p>
+      <i class="devicon-python-plain colored"></i>
+      <p>Python</p>
     </div>
   </div>
   `;

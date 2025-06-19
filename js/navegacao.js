@@ -1,6 +1,6 @@
 import { carregarPagina } from './estados/principal.js';
 import { carregarSobre } from './estados/sobre.js';
-import { carregarProjetos } from './estados/projetos.js';
+import { carregarProjetos } from './estados/habilidades.js';
 
 export function configurarNavegacao() {
   const botoes = document.querySelectorAll('.botao_cabecalho');
