@@ -58,27 +58,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#tela-loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #0f0f0f;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2em;
-  z-index: 9999;
-  transition: opacity 0.5s ease;
-}
-
-#tela-loading.escondido {
-  opacity: 0;
-  pointer-events: none;
-}
-
 a {
     text-decoration: none;
     color: #009b8e;

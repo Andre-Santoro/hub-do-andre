@@ -4,13 +4,6 @@ import { carregarSobre } from './estados/sobre.js';
 import { carregarProjetos } from './estados/habilidades.js';
 import { configurarModo } from './tema.js';
 
-window.addEventListener('load', () => {
-  const tela = document.getElementById('tela-loading');
-  
-  // Suaviza o desaparecimento da tela
-  tela.classList.add('escondido');
-});
-
 window.addEventListener('DOMContentLoaded', () => {
     configurarModo();
     configurarNavegacao();
