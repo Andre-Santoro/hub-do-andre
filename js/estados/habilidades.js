@@ -4,7 +4,6 @@ export function carregarProjetos() {
 
     const listaHabilidades = ["java", "spring", 
       "javascript", "react", 
-      'csharp', 'dotnetcore', 
       'postgresql', 'mongodb', 
       'docker', 'git', 'github',
       'html5', 'css3', 
@@ -19,7 +18,7 @@ export function carregarProjetos() {
 
         document.querySelector('.titulo_categoria').textContent = "Habilidades e competências";
 
-    let listaHabilidadesHtml = `Aqui está uma lista de linguagens, frameworks, ferramentas e competências que aprendi e desenvolvi ao decorrer 
+    let listaHabilidadesHtml = `Aqui está uma lista de linguagens, frameworks, ferramentas, competências e habilidades que aprendi e desenvolvi ao decorrer 
     de minha formação acadêmica.
     <div class="grid_habilidades">
     `;
