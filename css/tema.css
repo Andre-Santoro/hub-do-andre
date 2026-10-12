@@ -1,0 +1,66 @@
+.tema {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  padding: 30px 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+    background: var(--fundo-seletor-tema);
+    border: 1px solid var(--borda-seletor-tema);
+
+}
+
+.tema li {
+    display: contents;
+}
+
+.botao_tema {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 3px solid var(--borda-botao-tema);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+.escuro {
+    background-image: url(../assets/escuro.png);
+    background-size: cover;
+}
+
+.claro {
+    background-image: url(../assets/claro.png);
+    background-size: cover;
+}
+
+.escuro.ativo {
+    background-image: url(../assets/escuro_ativo.png);
+}
+
+.claro.ativo {
+    background-image: url(../assets/claro_ativo.png);
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .tema {
+        size: (0.5);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .tema {
+        gap: 0;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+}

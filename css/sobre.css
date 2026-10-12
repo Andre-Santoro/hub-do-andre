@@ -1,0 +1,51 @@
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .titulo {
+        font-size: 3.5em;
+    }
+
+    main h1 {
+        font-size: 2.2em;
+    }
+
+
+    .foto_perfil {
+        width: 150px;
+    }
+
+    .cabecalho {
+        margin: 3% 35%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .foto_perfil {
+        width: 120px;
+    }
+
+    .cabecalho {
+        margin: 2% 15%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .botao_claro,
+    .botao_escuro {
+        height: 50px;
+        width: 50px;
+    }
+}

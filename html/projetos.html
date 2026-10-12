@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br" modo="escuro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfólio | Projetos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+
+<body class="projetos">
+  <header id="cabecalho"></header>
+  
+  <h1 class="titulo_pagina">Projetos - Habilidades - Competências</h1>
+
+  <main class="main_projetos">
+    <section class="bloco_texto">
+      <p>
+        Está seção é dedicada para apresentação dos meus projetos, cada card possui um título com o nome do projeto, uma imagem do projeto,
+        uma breve descrição do projeto, e, caso queira ver em detalhes o que eu aprendi e implementei, basta apertar o botão "Ver detalhes".
+      </p>
+    </section>
+
+    <section class="grid_habilidades" aria-label="Linguagens e ferramentas">
+      <article class="card_habilidade">
+        <h3 class="card_titulo">Site de Portfólio</h3>
+        <img class="card_imagem" src="/assets/img_projeto_portfolio.png" alt="Imagem do projeto">
+        <p class="card_descricao">Uma aplicação web em forma de portfólio que agrega vários aprendizados de HTML, CSS e Javascript.</p>
+        <section class="card_detalhes" aria-label="Detalhes do projeto">
+          <h4>Objetivo</h4>
+          <p>Reunir em um único site minha trajetória como desenvolvedor, os projetos que construí e os conhecimentos que venho adquirindo. A navegação foi organizada em páginas próprias para facilitar a exploração do conteúdo e deixar cada assunto mais claro.</p>
+          <h4>Tecnologias</h4>
+          <p>HTML · CSS · JAVASCRIPT</p>
+          <h4>Funcionalidades</h4>
+          <p>O site inclui páginas de apresentação, projetos, processo criativo e contato; alternância entre temas claro e escuro com preferência salva no navegador; cards de projetos que expandem para mostrar detalhes; e formulário de contato integrado ao EmailJS, protegido por Google reCAPTCHA. A navegação entre páginas também apresenta uma tela de carregamento.</p>
+          <h4>Implementação e aprendizados</h4>
+          <p>O projeto foi construído com páginas HTML sem framework e estilos separados por responsabilidade. No desenvolvimento, pratiquei layout responsivo, componentes compartilhados para o cabeçalho, organização de estilos e variáveis CSS para centralizar cores e temas. Também implementei interações com JavaScript, atributos de acessibilidade para os controles e integração de serviços externos no envio do formulário.</p>
+        </section>
+        <button class="card_botao" type="button">Ver detalhes</button>
+      </article>
+      
+    </section>
+  </main>
+  <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

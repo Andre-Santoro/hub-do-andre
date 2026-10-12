@@ -3,6 +3,9 @@ Bem-vindo ao meu hub!
 Esse repositório é o lugar onde eu centralizo tudo que venho criando: projetos, estudos, testes e qualquer outra ideia que resolvi transformar em código. A ideia aqui é simples — manter tudo reunido em um só lugar, de forma organizada e acessível.
 
 Para acessar o site: hub-do-andre.vercel.app
+
+O site usa páginas HTML separadas: `index.html` e os arquivos em `html/`. O menu e os controles de tema são compartilhados pelo componente `js/componentes/cabecalho.js`.
+
 ### O que tem por aqui
 Aqui dentro você vai encontrar um pouco de tudo:
 

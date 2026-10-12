@@ -1,0 +1,43 @@
+.processo_criativo {
+    background-color: var(--fundo-processo);
+    width: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 20px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.processo_criativo__step {
+    border-radius: 10px;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    background-color: var(--fundo-etapa);
+    gap: 10px;
+    color: var(--texto-cartao);
+}
+
+.step__item {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid var(--borda-cartao-detalhes);
+    border-radius: 5px;
+}
+
+.item__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.item__img {
+    width: 400px;
+    height: 250px;
+    object-fit: contain;
+}

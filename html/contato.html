@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" modo="escuro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Contato</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body class="contato">
+    <header id="cabecalho"></header>
+
+    <main>
+        <section class="contato__layout" aria-labelledby="titulo-contato">
+            <aside class="contato__apresentacao">
+                <header>
+                    <span class="contato__etiqueta">Vamos conversar</span>
+                    <h1 id="titulo-contato">Entre em contato!</h1>
+                </header>
+                <p>Tem uma ideia, uma oportunidade ou quer trocar experiências? Envie uma mensagem. Vou gostar de conhecê-lo.</p>
+                <p class="contato__dica">Preencha os campos ao lado e retornarei assim que possível.</p>
+            </aside>
+
+            <form class="contato__formulario" id="contact-form">
+                <label class="contato__campo">
+                    <span>Assunto</span>
+                    <input type="text" name="title" id="title" placeholder="Sobre o que vamos conversar?" required>
+                </label>
+                <label class="contato__campo">
+                    <span>Nome</span>
+                    <input type="text" name="name" id="name" autocomplete="name" placeholder="Como posso te chamar?" required>
+                </label>
+                <label class="contato__campo">
+                    <span>E-mail</span>
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+                </label>
+                <label class="contato__campo contato__campo--mensagem">
+                    <span>Mensagem</span>
+                    <textarea name="message" id="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+                </label>
+
+                <div class="g-recaptcha"
+                     data-sitekey="6LdExestAAAAAPgXWPxbjtQQfzskgD0wdFDyAywU">
+                </div>
+
+
+                <button class="contato__botao" type="submit" id="submit-btn">Enviar mensagem</button>
+                <p class="contato__status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+<script type="module" src="/js/main.js"></script>
+<script type="module" src="/js/envio.js"></script>
+</body>
+</html>

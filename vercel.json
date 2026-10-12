@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/sobre-mim",
+      "destination": "/html/sobre-mim.html"
+    },
+    {
+      "source": "/projetos",
+      "destination": "/html/projetos.html"
+    },
+    {
+      "source": "/processo-criativo",
+      "destination": "/html/processo-criativo.html"
+    }
+  ]
+}
