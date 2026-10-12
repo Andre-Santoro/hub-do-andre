@@ -3,6 +3,7 @@ import { configurarModo } from './tema.js';
 import { paginasPermitidas } from './carregamento.js';
 import { configurarProjetos } from './projetos.js';
 
+const siteRoot = new URL('../', import.meta.url);
 
 window.addEventListener('DOMContentLoaded', () => {
     renderizarCabecalho();
@@ -34,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         evento.preventDefault();
-        const paginaCarregamento = new URL('./html/carregamento.html', window.location.origin);
+        const paginaCarregamento = new URL('html/carregamento.html', siteRoot);
         paginaCarregamento.searchParams.set('destino', destino.pathname);
         window.location.assign(paginaCarregamento.href);
     });
