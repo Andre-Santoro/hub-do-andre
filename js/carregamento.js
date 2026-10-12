@@ -1,9 +1,11 @@
+const siteRoot = new URL('../', import.meta.url);
+
 export const paginasPermitidas = new Set([
-  '/html/pagina-inicial.html',
-  '/html/sobre-mim.html',
-  '/html/projetos.html',
-  '/html/processo-criativo.html',
-  '/html/contato.html'
+  new URL('html/pagina-inicial.html', siteRoot).pathname,
+  new URL('html/sobre-mim.html', siteRoot).pathname,
+  new URL('html/projetos.html', siteRoot).pathname,
+  new URL('html/processo-criativo.html', siteRoot).pathname,
+  new URL('html/contato.html', siteRoot).pathname,
 ]);
 
 const tempoMinimoDeCarregamento = 1500;
@@ -20,7 +22,7 @@ async function carregarDestino() {
     throw new Error('O endereço da página solicitada é inválido.');
   }
 
-  const destino = new URL(caminhoDestino, window.location.origin);
+  const destino = new URL(caminhoDestino, siteRoot);
   const controlador = new AbortController();
   const temporizador = window.setTimeout(
     () => controlador.abort(),

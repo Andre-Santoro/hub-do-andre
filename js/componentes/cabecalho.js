@@ -1,9 +1,11 @@
+const siteRoot = new URL('../../', import.meta.url);
+
 const paginas = [
-  { nome: 'pagina-inicial', caminho: '/html/pagina-inicial.html', rotulo: 'Página Inicial', botao: 'botao_pagina_principal' },
-  { nome: 'sobre-mim', caminho: '/html/sobre-mim.html', rotulo: 'Sobre mim', botao: 'botao_sobre_mim' },
-  { nome: 'projetos', caminho: '/html/projetos.html', rotulo: 'Projetos', botao: 'botao_projetos' },
-  { nome: 'processo-criativo', caminho: '/html/processo-criativo.html', rotulo: 'Processo Criativo', botao: 'botao_processo_criativo' },
-  { nome: 'contato', caminho: '/html/contato.html', rotulo: 'Contato', botao: 'botao_contato'},
+  { nome: 'pagina-inicial', caminho: new URL('html/pagina-inicial.html', siteRoot).href, rotulo: 'Página Inicial', botao: 'botao_pagina_principal' },
+  { nome: 'sobre-mim', caminho: new URL('html/sobre-mim.html', siteRoot).href, rotulo: 'Sobre mim', botao: 'botao_sobre_mim' },
+  { nome: 'projetos', caminho: new URL('html/projetos.html', siteRoot).href, rotulo: 'Projetos', botao: 'botao_projetos' },
+  { nome: 'processo-criativo', caminho: new URL('html/processo-criativo.html', siteRoot).href, rotulo: 'Processo Criativo', botao: 'botao_processo_criativo' },
+  { nome: 'contato', caminho: new URL('html/contato.html', siteRoot).href, rotulo: 'Contato', botao: 'botao_contato'},
 ];
 
 const cabecalho = document.getElementById('cabecalho');
@@ -17,7 +19,7 @@ export function renderizarCabecalho() {
   cabecalho.innerHTML = `
 
     <nav class="navegacao" aria-label="Navegação principal">
-      <img class="logo" src="/assets/favicon.png" alt="Logo da página" />
+      <img class="logo" src="${new URL('assets/favicon.png', siteRoot).href}" alt="Logo da página" />
       ${paginas.map(pagina => `
         <a
           class="botao botao_navegacao ${pagina.botao} ${pagina === paginaAtual ? ' ativo' : ''}"
@@ -25,7 +27,7 @@ export function renderizarCabecalho() {
           ${pagina === paginaAtual ? 'aria-current="page"' : ''}
         >${pagina.rotulo}</a>
       `).join('')}
-      <a class="botao botao_download_cv" href="/assets/curriculo.pdf" download="curriculo.pdf">Baixe meu CV</a>
+      <a class="botao botao_download_cv" href="${new URL('assets/curriculo.pdf', siteRoot).href}" download="curriculo.pdf">Baixe meu CV</a>
     </nav>
 
     <ul class="tema" aria-label="Escolher tema">
